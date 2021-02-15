@@ -1,0 +1,3 @@
+persian_wordcloud
+opencv-python
+argparse
