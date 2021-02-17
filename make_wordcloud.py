@@ -80,6 +80,7 @@ def main():
     parser.add_argument('--maxwords',help='maximum number of words to show in image', type=int, default=1000)
     parser.add_argument('--bgcolor',help='background color(black or white)', type=str, default='white')
     parser.add_argument('--out',help='image output name', type=str, default='out.png')
+    parser.add_argument('--cmap',help='output image colormap', type=str, default='plasma')
 
     args = parser.parse_args()
     # print(args.output)
@@ -98,6 +99,7 @@ def main():
         max_font_size=500,
         random_state=True,
         background_color=args.bgcolor,
+        colormap=args.cmap,
         mask=read_img(args.mask)
     ).generate(read_file(args.txt))
 
