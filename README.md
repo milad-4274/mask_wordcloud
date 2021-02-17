@@ -36,9 +36,11 @@ this script parse your text file and generate wordcloud using your generated mas
 <img src="images/shajarian_wc.png" width="300" height="300">
 
 ### Notes
-you can check additional arguments by running
+- you can check additional arguments by running
 `python mask_generator.py --help`
 or
 `python make_wordcloud.py --help`
+
+- you can see `images/guides` for choosing your wordcloud colormap.
 
 
