@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--image', help='main image file',
                         type=str, required=True)
-    parser.add_argument('--thresh', help='threshold', type=int, required=False, default=125)
+    parser.add_argument('--thresh', help='threshold(default is 125, choose upper value for reducing black areas in image)', type=int, required=False, default=125)
     parser.add_argument('--width', help='width of output image',type=int ,required=False, default=0)
     parser.add_argument('--height', help='height of output image',type=int ,required=False, default=0)
     parser.add_argument('--out', help='name of output image',required=False, default='mask.png')
